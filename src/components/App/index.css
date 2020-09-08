@@ -4,10 +4,10 @@
   }
   
   body{
-    background-image: url('../../img/fondo.jpg');
+    background-image: url('../../img/fondo.jpg') !important;
     background-size: auto;
     background-repeat: repeat;
-
+    
   }
 
   .inner {max-width: 1200px; margin: 0 auto; margin-top:40px; }
@@ -23,20 +23,37 @@
     
   }
 
-  .MuiMenuItem-root {
-    width: auto;
-    overflow: hidden;
-    font-size: 1rem;
-    box-sizing: border-box;
-    min-height: 48px;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 2!important;
-    padding-top: 6px;
-    white-space: nowrap;
-    letter-spacing: 0.00938em;
-    padding-bottom: 6px;
-    border-radius: 2em!important;
+ 
+.MuiMenuItem-root {
+  /* width: auto; */
+  overflow: hidden;
+  font-size: 1rem;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 48px;
+  padding: 10px;
+  font-family: 'Kumbh Sans', sans-serif!important;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 6px;
+  white-space: nowrap;
+  letter-spacing: 0.00938em;
+  padding: 20px !important;
+  padding-bottom: 6px;
+}
+
+.MuiListItem-button:hover {
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: none;
+  border-radius: 0em !important;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px !important;
 }
 
 .MuiList-padding {
@@ -47,8 +64,26 @@
   /* width: 120%; */
 }
 
-.makeStyles-root-17 {
-    max-width: 1200px;
+.MuiPaper-elevation8 {
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), 0px 0px 0px 0px rgba(0,0,0,0), 0px 0px 0px 0px rgba(0,0,0,0) !important; 
+}
+
+
+
+.MuiPopover-paper {
+  outline: 0;
+  position: absolute;
+  max-width: calc(100% - 32px);
+  min-width: 16px;
+  max-height: calc(100% - 32px);
+  min-height: 16px;
+  overflow-x: hidden;
+  width: 12% !important;
+  overflow-y: auto;
+}
+
+.MuiPaper-root {
+    max-width: auto;
     background: #161638 !important;
    
 }
@@ -98,6 +133,7 @@
   background: #141b46!important;
   left: -1px!important;
   transition: 0.3s!important;
+  z-index: 99!important;
 }
 
 .MuiTypography-body2 {
@@ -151,3 +187,57 @@
   font-weight: bold;
   font-style: oblique;
 }
+
+.MuiButton-textSizeSmall {
+  padding: 17px 10px 10px 11px !important;
+  font-size: 0.8125rem;
+  margin: 0 auto !important;
+}
+
+
+
+.MuiButton-root {
+  color: #fff;
+   
+  font-size: 0.875rem;
+   min-width: 64px !important;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+   line-height: 1.75 !important;
+  border-radius: 3em !important;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+
+
+.MuiCardActions-root {
+  display: flex;
+  align-items: center;
+  margin: 20px !important;
+}
+
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
