@@ -21,7 +21,7 @@ function App() {
         [prefersDarkMode],
     );
     return (
-        
+        <div id="fondo">
         <ThemeProvider theme={theme}>
             
             <CssBaseline />
@@ -40,6 +40,7 @@ function App() {
             </Router>
             <Footer/>
         </ThemeProvider>
+        </div>
         
     );
 }
