@@ -19,10 +19,21 @@
     font-size: 20px;
 }
 
-  #logo{
-    width: 10%;
-    
-  }
+#logo {
+  width: 10%;
+  margin-right: 4em;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#contapis {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5em;
+
+}
 
   .MuiCardMedia-img {
     object-fit: cover;
@@ -31,6 +42,13 @@
     margin: 0 auto;
 }
 
+.MuiToolbar-root p {
+  padding: 0px 20px 0px 6px;
+  align-items: center;
+  align-content: center;
+  /* margin-top: 17px; */
+  font-size: 13px;
+}
 .makeStyles-root-17 {
   max-width: 1200px;
   max-height: 54vh!important;

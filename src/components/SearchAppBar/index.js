@@ -8,6 +8,12 @@ import SearchIcon from '@material-ui/icons/Search';
 import { withRouter } from 'react-router-dom';
 import SimpleMenu from '../SimpleMenu'
 import Maimo from '../../img/logo.png'
+import Clima from '../Clima'
+import Reloj from '../Reloj'
+import Fecha from '../Fecha'
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import WatchLaterIcon from '@material-ui/icons/WatchLater';
+import WavesIcon from '@material-ui/icons/Waves';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -71,6 +77,14 @@ const SearchAppBar = (props) => {
             <AppBar position="static">
                 <Toolbar>
                     <SimpleMenu />
+                    <div id="contapis">
+                    <CalendarTodayIcon/>
+                    <Fecha/>
+                    <WavesIcon/>
+                    <Clima />
+                    <WatchLaterIcon/>
+                    <Reloj/>
+                    </div>
                     <Typography className={classes.title} variant="h6" noWrap>
                        <img id="logo" src={Maimo}></img>
                     </Typography>
